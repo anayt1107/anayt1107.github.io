@@ -3,12 +3,29 @@
 <head>
   <title>My Projects</title>
   <style>
+    /* Font-face declarations */
+    @font-face {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+    }
+
+    /* General styles */
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
       margin: 20px;
     }
     h1 {
+      font-size: 36px;
       text-align: center;
+      font-weight: 700; /* Bold for titles */
     }
     .nav {
       display: flex;
@@ -24,6 +41,7 @@
       border-radius: 5px;
       text-align: center;
       border: 1px solid #ccc;
+      font-weight: 400; /* Regular weight */
     }
     .grid-container {
       display: grid;
@@ -46,6 +64,16 @@
       border-bottom: 1px solid #ddd;
       padding-bottom: 10px;
     }
+    .project-frame h2 {
+      font-size: 18px;
+      color: blue;
+      font-weight: 700; /* Bold for headings */
+    }
+    .project-frame p {
+      font-size: 14px;
+      color: #555;
+      font-weight: 400; /* Regular for descriptions */
+    }
   </style>
 </head>
 <body>
@@ -61,24 +89,24 @@
   <div class="project-frame">
     <a href="details.html" style="text-decoration: none; color: black;">
       <img src="thumbnail.jpg" alt="Product Thumbnail">
-      <h2 style="color: blue;">RGB Tesla Logo</h2>
-      <p style="color: #555;">A light-up wall decor piece.</p>
+      <h2>RGB Tesla Logo</h2>
+      <p>A light-up wall decor piece.</p>
     </a>
   </div>
 
   <div class="project-frame">
     <a href="details2.html" style="text-decoration: none; color: black;">
       <img src="thumbnail2.png" alt="Product Thumbnail">
-      <h2 style="color: blue;">Scale Model of my Elementary School</h2>
-      <p style="color: #555;">I modeled and 3D printed a scaled-down version of my elementary school.</p>
+      <h2>Scale Model of my Elementary School</h2>
+      <p>I modeled and 3D printed a scaled-down version of my elementary school.</p>
     </a>
   </div>
 
   <div class="project-frame">
     <a href="details3.html" style="text-decoration: none; color: black;">
       <img src="thumbnail3.png" alt="Product Thumbnail">
-      <h2 style="color: blue;">Wireless Charging Pad for Tesla</h2>
-      <p style="color: #555;">I designed a much cheaper, DIY version of Tesla's $300 wireless charging pad.</p>
+      <h2>Wireless Charging Pad for Tesla</h2>
+      <p>I designed a much cheaper, DIY version of Tesla's $300 wireless charging pad.</p>
     </a>
   </div>
 </div>
