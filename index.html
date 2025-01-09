@@ -25,12 +25,13 @@
       text-align: center;
       border: 1px solid #ccc;
     }
-    .horizontal-container {
-      display: flex;
-      justify-content: space-between; /* Add space between items */
-      gap: 20px; /* Add gap between frames */
-      flex-wrap: wrap; /* Ensure items wrap on smaller screens */
-      margin: 20px 0;
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      justify-content: center; /* Center the grid horizontally */
+      max-width: 1000px; /* Add a max width for centering */
+      margin: 0 auto; /* Center the grid container itself */
     }
     .project-frame {
       border: 2px solid #ccc;
@@ -38,8 +39,6 @@
       text-align: left;
       border-radius: 10px;
       background: #f9f9f9;
-      flex: 1; /* Allow items to grow equally */
-      max-width: 300px; /* Limit the maximum width */
     }
     .project-frame img {
       width: 100%;
@@ -58,7 +57,7 @@
   <a href="contact.html">Contact</a>
 </div>
 
-<div class="horizontal-container">
+<div class="grid-container">
   <div class="project-frame">
     <a href="details.html" style="text-decoration: none; color: black;">
       <img src="thumbnail.jpg" alt="Product Thumbnail">
