@@ -1,41 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-  @font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 100 900;
-  src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-}
-
-body {
-  font-family: Montserrat, Helvetica, sans-serif;
-  font-weight: 400;
-  background-color: #f0f0f0;
-  color: black;
-  margin: 20px;
-}
-
-h1, h2 {
-  font-weight: 700;
-}
-
-p {
-  font-weight: 400;
-  color: #555;
-}
-
   <title>Compact Desk Lamp Enclosure</title>
+  <style>
+    @font-face {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 100 900;
+      src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    }
+
+    body {
+      font-family: Montserrat, Helvetica, sans-serif;
+      font-weight: 400;
+      background-color: #f0f0f0;
+      color: black;
+      margin: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px;
+    }
+
+    .nav a {
+      display: inline-block;
+      padding: 10px 40px;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+      border: 1px solid #ccc;
+      font-weight: 400;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
+      width: 500px;
+      height: auto;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #555;
+      text-align: center;
+    }
+  </style>
 </head>
-<body style="font-family: Helvetica; margin: 20px;">
+<body>
 
-  <h1 style="text-align: left; font-size: 36px; margin-bottom: 20px;">Compact Desk Lamp Enclosure</h1>
+  <h1>Compact Desk Lamp Enclosure</h1>
 
-  <img src="thumbnail4.jpg" alt="Compact Desk Lamp Enclosure" style="width: 500px; height: auto; display: block; margin-bottom: 20px;">
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-  <p style="color: gray; font-size: 14px; margin-bottom: 20px;">Date Created: Mar 12th, 2022</p>
+  <div class="image-container">
+    <img src="thumbnail4.jpg" alt="Compact Desk Lamp Enclosure">
+  </div>
 
-  <p style="font-size: 16px; line-height: 1.5;">I modeled this enclosure for a broken Ikea desk lamp, by repurposing its bulb and wiring. Previously, it used a paper-like enclosure to diffuse the light, which took up a lot of desk space, which was a problem, so I made this enclosure as small as possible while still maintaining a well-diffused light output.</p>
+  <p style="color: gray;">Date Created: Mar 12th, 2022</p>
+
+  <p>
+    I modeled this enclosure for a broken Ikea desk lamp, by repurposing its bulb and wiring. 
+    Previously, it used a paper-like enclosure to diffuse the light, which took up a lot of desk space, 
+    which was a problem, so I made this enclosure as small as possible while still maintaining a well-diffused light output.
+  </p>
 
 </body>
 </html>
